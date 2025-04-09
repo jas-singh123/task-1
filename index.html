@@ -3,18 +3,274 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Insert Title Here</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Book Before</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Oswald', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+
+        nav a {
+            color: #fff;
+            padding: 1rem;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .hero {
+            background-image: url('https://cdn.vectorstock.com/i/500p/87/15/airplane-in-blue-sky-with-clouds-vector-55178715.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0;
+        }
+
+        .hero-content h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-content p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-btn {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-btn:hover {
+            background-color: #0056b3;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem;
+            width: 300px;
+            min-height: 350px;
+            box-shadow: 0 0 20px 8px rgba(169, 169, 169, 0.8);
+            transition: box-shadow 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card h2, .card p {
+            color: #333; /* Adjusted text color for visibility */
+        }
+
+        .card:hover {
+            box-shadow: 0 0 30px 12px rgba(169, 169, 169, 1);
+        }
+
+        .big-boxes {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 2rem;
+        }
+
+        .big-box {
+            background-color: #f4f4f4;
+            border-radius: 8px;
+            padding: 3rem;
+            min-height: 400px;
+            width: 48%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+            box-shadow: 0 0 20px 8px rgba(169, 169, 169, 0.8);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        .big-box-text {
+            width: 60%;
+        }
+
+        .big-box-img {
+            width: 35%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .big-box:hover {
+            box-shadow: 0 0 30px 12px rgba(169, 169, 169, 1);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
 </head>
 <body>
+
     <header>
-        <h1>My Website</h1>
+        <h1>Book Before</h1>
+        <hr class="divider">
     </header>
+
+    <nav>
+        <a href="#flights">Book a Flight</a>
+        <a href="#hotels">Book a Hotel</a>
+        <a href="#insurance">Get Travel Insurance</a>
+        <a href="#car">Book a Car</a>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Book Before</h2>
+            <p>Your one-stop solution for booking flights, hotels, cars, and insurance.</p>
+            <a href="#flights" class="cta-btn">Get Started</a>
+        </div>
+    </section>
+
     <main>
-        <p>Insert Introduction Here</p>
+        <!-- Flight Box -->
+        <section id="flights" class="card">
+            <h2>Book a Flight</h2>
+            <p>Find and book flights easily.</p>
+        </section>
+
+        <!-- Hotel Box -->
+        <section id="hotels" class="card">
+            <h2>Book a Hotel</h2>
+            <p>Reserve your stay at the best hotels.</p>
+        </section>
+
+        <!-- Insurance Box -->
+        <section id="insurance" class="card">
+            <h2>Get Travel Insurance</h2>
+            <p>Protect your journey with comprehensive coverage.</p>
+            
+        </section>
+
+        <!-- Car Box -->
+        <section id="car" class="card">
+            <h2>Book a Car</h2>
+            <p>Rent a car for your travels.</p>
+        </section>
     </main>
+
+    <section class="big-boxes">
+        <!-- Flight Box -->
+        <div class="big-box">
+            <div class="big-box-text">
+                <h2>Flights</h2>
+                <p>Find the best flights to your dream destinations.</p>
+                <p> domestic, chose city:_____</p>
+                <p>international, chose country:_____</p>
+            </div>
+            <img src="https://thumbs.dreamstime.com/b/vector-cartoon-illustration-flying-passenger-airplane-white-background-isolated-commercial-airline-concept-travel-jet-174475709.jpg" alt="Flights" class="big-box-img">
+        </div>
+
+        <!-- Hotel Box -->
+        <div class="big-box">
+            <div class="big-box-text">
+                <h2>Hotels</h2>
+                <p>Find a place to stay, and call it home anywhere.</p>
+                <p> single bedroom house:[ ]</p>
+            <p> dubble bedroom house:[ ]</p>
+            <p> 3 bedroom house:[ ]</p>
+            <p> 4 bedroom house:[ ]</p>
+        
+            </div>
+            <img src="https://media.istockphoto.com/id/1337168312/vector/old-european-southern-hotel-flat-style-vector-illustration.jpg?s=612x612&w=0&k=20&c=nS6j5yjU6R23dRBkuF9ZTkHCZnnqqG9EiHPtPb2sau8=" alt="Hotels" class="big-box-img">
+        </div>
+
+        <!-- Travel Insurance Box -->
+        <div class="big-box">
+            <div class="big-box-text">
+                <h2>Travel Insurance</h2>
+                <p>Have a backup for safe travels.</p>
+                <p>Pick your plan</p>
+                <p> single person:[ ]</p>
+            <p>  family:[ ]</p>
+            </div>
+            <img src="https://media.istockphoto.com/id/1350713547/vector/travel-insurance-banner-concept-red-traveling-luggage-suitcase-and-airplane-trip-protect-by.jpg?s=612x612&w=0&k=20&c=hkbOAbQAWJU0im5mXrve8Zq7hbTBTh03BV_hy2m7RaM=" alt="Travel Insurance" class="big-box-img">
+        </div>
+
+        <!-- Car Rental Box -->
+        <div class="big-box">
+            <div class="big-box-text">
+                <h2>Car Rentals</h2>
+                <p>Rent a car for a smooth and comfortable journey.</p>
+                <p> chose your car </p>
+                <p> suv[ ]                        
+                    Ute[ ]
+                    Convertible[ ]
+                    Sedan[ ]
+                    Crossover[ ]
+                    Minivan[ ]
+                    Hybrid[ ]
+                    Sports[ ]
+                    Luxury[ ]
+                    Off-road[ ] 
+                    
+                    
+                    4x4[ ]
+                    Fwd[ ]
+                    Bwd[ ]
+                    
+                    Electric[ ]
+                    Fossil fuel[ ]
+                    
+                     </p>
+            </div>
+            <img src="https://img.freepik.com/free-psd/cartoon-modern-car-illustration_23-2151227153.jpg" alt="Car Rentals" class="big-box-img">
+        </div>
+    </section>
+
     <footer>
-        <p>Start Footer Here</p>
+        <p>Make your dream comes true, and safe travels.</p>
+        <p>                     </p>
+        <p>&copy; 2025 Book Before. All rights reserved.</p>
     </footer>
 </body>
 </html>
